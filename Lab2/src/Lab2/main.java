@@ -11,21 +11,21 @@ public class main {
         Uzytkownik uzytkownik1 = new Uzytkownik();
 
         List<Ksiazka> listaksiazek = new ArrayList<Ksiazka>(10);
-        Ksiazka ksiazka1 = new Ksiazka("Ksiazka#1", "1", "1", "1", "1", 30, "1", "puste");
+        Ksiazka ksiazka1 = new Ksiazka("Ksiazka#1", "1700", "Bob", "Uni", "10", 30, "10", "puste");
         listaksiazek.add(ksiazka1);
-        Ksiazka ksiazka2 = new Ksiazka("Ksiazka#2", "2", "2", "2", "2", 30, "2", "puste");
+        Ksiazka ksiazka2 = new Ksiazka("Ksiazka#2", "1800", "Bob", "Uni", "20", 30, "20", "puste");
         listaksiazek.add(ksiazka2);
 
         List<Film> listafilmow = new ArrayList<Film>(10);
-        Film film1 = new Film("Film#1", "3", "3", "3", "3", 10, "2h", "puste");
+        Film film1 = new Film("Film#1", "1900", "Bob", "Uni", "30", 10, "2h", "puste");
         listafilmow.add(film1);
-        Film film2 = new Film("Film#2", "3", "3", "3", "3", 10, "3h", "puste");
+        Film film2 = new Film("Film#2", "2000", "Bob", "Uni", "30", 10, "3h", "puste");
         listafilmow.add(film2);
 
         List<Plyta> listaplyt = new ArrayList<Plyta>(10);
-        Plyta plyta1 = new Plyta("Plyta#1", "4", "4", "4", "4", 5, "50MB", "puste");
+        Plyta plyta1 = new Plyta("Plyta#1", "2010", "Bob", "Uni", "40", 5, "50MB", "puste");
         listaplyt.add(plyta1);
-        Plyta plyta2 = new Plyta("Plyta#2", "4", "4", "4", "4", 5, "70MB", "puste");
+        Plyta plyta2 = new Plyta("Plyta#2", "2020", "Bob", "Uni", "40", 5, "70MB", "puste");
         listaplyt.add(plyta2);
 
         double oplata = 0;
