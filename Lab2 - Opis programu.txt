@@ -1,8 +1,8 @@
 Instrukcja 2 - obiektowa wypożyczalnia
 
-Na samym początku programu wywołane są po dwa konstruktory odpowiednio dla Ksiazka/Plyta/Film.
+Na samym początku programu wywołane są po dwa konstruktory odpowiednio dla Ksiazka/Plyta/Film. Klasy te dziedziczą po klasie abstrakcyjnej Zbiory.
 
-Program pozwala na zarejestrowanie i zalogowanie użytkownika do wypożyczalni. Powoduje to stworzenie piku tekstowego o nazwie loginu(indeksu) użytkownika. Folder przechowuje informacje(historię) o dacie i akcji wykonanej przez użytkownika. Plik jest tworzony w folderze paczki Lab2.
+Program pozwala na zarejestrowanie i zalogowanie użytkownika do wypożyczalni. Uzytkownicy dziedziczą po klasie Uzytkownik. Powoduje to stworzenie piku tekstowego o nazwie loginu(indeksu) użytkownika. Folder przechowuje informacje(historię) o dacie i akcji wykonanej przez użytkownika. Plik jest tworzony w folderze paczki Lab2.
 
 Przy wypożyczaniu i oddawaniu obiektu należy poddać datę w odpowiednim formacie*, dzięki czemu obliczana jest liczba dni między datami i ewentualna kara za przetrzymanie obiektu. Występuje uniwersalna kara 1 zł za każdy dzień ponad maksymalny czas wypożyczenia, który zależy od klas Ksiazka/Plyta/Film. Gdy użytkownik ma zaległości nie będzie mógł wypożyczać kolejnych obiektów i program zostanie zatrzymany.
 
