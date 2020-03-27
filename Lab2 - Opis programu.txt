@@ -2,8 +2,12 @@ Instrukcja 2 - obiektowa wypożyczalnia
 
 Na samym początku programu wywołane są po dwa konstruktory odpowiednio dla Ksiazka/Plyta/Film. Klasy te dziedziczą po klasie abstrakcyjnej Zbiory.
 
-Program pozwala na zarejestrowanie i zalogowanie użytkownika do wypożyczalni. Uzytkownicy są obiektami klasy Uzytkownik. Powoduje to stworzenie pliku tekstowego o nazwie loginu(indeksu) użytkownika. Folder przechowuje informacje(historię) o dacie i akcji wykonanej przez użytkownika. Plik jest tworzony w folderze paczki Lab2.
+Program pozwala na zarejestrowanie i zalogowanie użytkownika do wypożyczalni. Uzytkownicy są obiektami klasy Uzytkownik. Powoduje to stworzenie pliku tekstowego o nazwie loginu(indeksu) użytkownika. Folder przechowuje informacje(historię) o dacie i akcji wykonanej przez użytkownika. Plik jest tworzony w folderze paczki Lab2. Aby zobaczyć historię wypożyczeń użytkownika należy ręcznie otworzyć plik tekstowy.
 
-Przy wypożyczaniu i oddawaniu obiektu należy poddać datę w odpowiednim formacie*, dzięki czemu obliczana jest liczba dni między datami i ewentualna kara za przetrzymanie obiektu. Występuje uniwersalna kara 1 zł za każdy dzień ponad maksymalny czas wypożyczenia, który zależy od klas Ksiazka/Plyta/Film. Gdy użytkownik ma zaległości nie będzie mógł wypożyczać kolejnych obiektów i program zostanie zatrzymany.
+Przy wypożyczaniu i oddawaniu obiektu należy poddać datę w odpowiednim formacie*, dzięki czemu obliczana jest liczba dni między datami i ewentualna kara za przetrzymanie obiektu. Występuje uniwersalna kara 1 zł za każdy dzień ponad maksymalny czas wypożyczenia, który zależy od pola "dni", w klasach Ksiazka/Plyta/Film. Gdy użytkownik ma zaległości nie będzie mógł wypożyczać kolejnych obiektów, wyświetli sie komunikat o konieczności spłaty długu i program zostanie zatrzymany.
+
+W programie użyte są settery i gettery, aby można było mieć dostęp do pól obiektów, gdyż należało użyć hermetyzacji. Nazwy klas są napisane z dużej litery, a obiekty z małej.
+
+Można by zaimplementować spis zarejestrowanych użytkowników, dynamiczne dodawanie nowych obiektów klasy super Zbiory lub pewne zabezpieczenia lub komunikaty w przypadku gdy użytkownik poda informacje w konsoli w złym formacie.
 
 *W przypadku wpisania dat w złym formacie program zostanie zatrzymany i wyskoczą błędy związane z metodą, która obsługuje format dat.
