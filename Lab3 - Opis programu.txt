@@ -1,0 +1,14 @@
+Instrukcja 3 - sortowanie
+
+Program służy do posortowania tablicy dwustu-elementowej wybranym algorytmem. Na samym początku inicjowana jest tablica jednowymiarowa o podanym rozmiarze. Następnie losowane jest i wrzucane 200 liczb z zakresu 0-199 do wyżej wymienionej tablicy.
+
+Nastepnie uzytkownik jest pytany, którym algorytmem chce posortowac stworzoną tablicę. Stworzono 3 klasy, odpowiednio dla sortowania bąbelkowego, kubełkowego "pojedynczego" i kubełkowego "przedziałowego". Wszystkie 3 klasy implementują interfejs Sortable, który wymusza na nich metody sort oraz step_counting. Obie metody muszą się znajdować w klasach implementujących or posiadać te same typy. Zastosowano typ 'static void', aby nie tworzyć niepotrzebnie obiektów klas podczas sortowania.
+
+Sortowanie bąbelkowe polega na rekurencyjnym porównywaniu sąsiadujących elementów i sukcesywne zamienianie miejscami mniejszego elementu z zwiększym. Algorytm powtarza się od początku tablicy aż każda liczba będzie posortowana. Użyto tablicy "Porzadek", w której wykonuje się sortowanie, aby nie modyfikować tablicy początkowej.
+
+Sortowanie kubełkowe "pojedyncze" polega przypisaniu każdej liczby do dokładnie jednego kubełka. W tym celu tworzy się tablicę "Kubelek", która ma 200+1 obiektów. Następnie po kolei wrzuca się odpowiednią liczbę to kubełka z jej indeksem, zwiększając wartość kubełka o 1. Następnie do nowej tablicy "Porzadek" wypisuje się liczby z kubełków od największej do najmniejszej, powtarzając liczby w których wartość w kubełku jest wieksza od 0.
+
+Sortowanie kubełkowe "przedziałowe" działa podobnie z tą różnicą, że przygotowane zostało 20 kubełków, z których każdy zawiera przedział liczb 0-9;10-20 itd. W tym celu użyto listy w liście, aby mieć "tablicę 2D", "dzielnika", ktory decyduje o przynależności do danego kubełka. Gdy wszystkie kubełki zostaną przyporządkowane kubełkom, odbywa się sortowanie bąbelkowe wewnątrz kubełka.
+
+Dodatkowo można by zaimplementować ponowne losowanie liczb w tablicy początkowej, tak aby nie trzeba było restartować programu w celu sprawdzenia działania na innych liczbach.
+
