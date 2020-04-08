@@ -10,5 +10,7 @@ Sortowanie kubełkowe "pojedyncze" polega przypisaniu każdej liczby do dokładn
 
 Sortowanie kubełkowe "przedziałowe" działa podobnie z tą różnicą, że przygotowane zostało 20 kubełków, z których każdy zawiera przedział liczb 0-9;10-20 itd. W tym celu użyto listy w liście, aby mieć "tablicę 2D" oraz "dzielnika", ktory decyduje o przynależności do danego kubełka. Gdy wszystkie liczby zostaną przyporządkowane kubełkom, odbywa się sortowanie bąbelkowe wewnątrz kubełka.
 
+Sortowanie bąbelkowe zazwyczaj używa około 9 tys. porównań, kubełkowe pojedyncze zawsze 200, a przedziałowe około 400. Ponieważ kubełkowe pojedyncze wymaga tworzenia dużej ilości kubełków, najwydajniejszym sposobem wydaje się algortym kubełkowy z przedziałami.
+
 Dodatkowo można by zaimplementować ponowne losowanie liczb w tablicy początkowej, tak aby nie trzeba było restartować programu w celu sprawdzenia działania na innych liczbach.
 
