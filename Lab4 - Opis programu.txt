@@ -1,0 +1,9 @@
+Zad 2. Wprowadza się liczbę w formacie String. Następnie w bloku try używam metody Integer.parseInt, która zamienia dany string na liczbę int. Jeżeli w stringu nie poda się liczby tylko litery, wtedy pojawi się błąd NumberFormatException. Dlatego w bloku catch, definiuje się działanie w razie wystąpienia tego błedu; jest to wypisanie wiadomości oraz zakończenie programu.
+
+
+Zad 3. Użytkownik podaje, który element go interesuje. Następnie w bloku try wywołana jest metoda sort klasy Tablica, która tworzy tablicę dwustu elementową, wypełnioną losowymi liczbami oraz wypisuje na konsoli żądany element. Wykorzystana jest tablica z poprzedniego laboratorium. Jednym z możliwych błędów jakie mogą wystąpić, może być podanie przez użytownika numeru indeksu tablicy, który wykracza poza liczbę elemntów w tej tablicy. Dlatego w bloku catch, dla obiektu error klasy IndexOutOfBoundsException, wypisywany jest komunikat o przyczynie błędu oraz następuje zakończenie programu.
+
+Zadanie 2. i 3. znajduje się w pliku Main.java
+
+
+Zad 4.  Ze starej klasy Przedmiot zostały usunięte 4 pola: autor, data_wydania, cena i wydawnictwo. Na potrzeby zadania została stworzona klasa Wydawnictwo. W klasie tej dodane zostały 4 pola z klasy Przedmiot. Pola te występują dla każdej z dziedziczących klas Ksiazka/Plyta/Film. Przy tworzeniu obiektów Ksiazka/Plyta/Film w klasie Main nie podaje się teraz wartości tych pól, gdyż są definiowane w konstruktorach tych klas - w każdej z tych klas wywołany jest konstruktor Wydawnictwa. Następnie w konstruktorze np. Ksiazki wywoływane są settery dla pól stworzonego obiektu Wydawnictwo. W ten sposób wykorzystuje się kompozycję.
