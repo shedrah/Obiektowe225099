@@ -1,3 +1,6 @@
+Zad 1. Klasa Exception dziedziczy po klasie Throwable. Klasa ta wskazuje jakie wyjątki aplikacja może chcieć 'złapać' i decyduje co ma się wydarzyć w wypadku wystąpenia wyjątku. Jest to przydatne, jeśli chcemy zachować płynne działanie programu, mimo wystąpienia pewnych błędów. Są trzy rodzaje wyjątków: Checked Exception, Unchecked Exception oraz Error. Dzielą się ze względu na czas wystąpienia błędu - Checked podczas kompilacji, Unchecked podczas działania programu. Jednym z takich wyjątków może być klasa IndexOutOfBoundsException, która została wykorzystana w zadaniu trzecim.
+
+
 Zad 2. Wprowadza się liczbę w formacie String. Następnie w bloku try używam metody Integer.parseInt, która zamienia dany string na liczbę int. Jeżeli w stringu nie poda się liczby tylko litery, wtedy pojawi się błąd NumberFormatException. Dlatego w bloku catch, definiuje się działanie w razie wystąpienia tego błedu; jest to wypisanie wiadomości oraz zakończenie programu.
 
 
