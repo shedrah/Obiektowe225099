@@ -6,6 +6,7 @@ public class KonstruktorZadan {
     private int[] tablica;
     private String przyklad;
     private int[] tablica2;
+         //////////Zadanie1//////////
         public boolean Zad1(int temperatura1, int temperatura2){
             if ((temperatura1<100) || (temperatura2<100))
             {
@@ -14,6 +15,7 @@ public class KonstruktorZadan {
             }else
                 return false;
         }
+        //////////Zadanie2//////////
         public boolean Zad2(int[] tablica) {
             boolean wynik=false;
             for (int i = 0; i < 10; i++)
@@ -32,11 +34,13 @@ public class KonstruktorZadan {
                 return false;
             }
         }
+        //////////Zadanie3//////////
             public String Zad3(String przyklad)
             {
                 int mid = przyklad.length();
                 return przyklad.substring(0, mid/2);
             }
+        //////////Zadanie4//////////
             public static int [] Zad4(int[] tablica2)
             {
                 int[] temp = new int [tablica2.length];
