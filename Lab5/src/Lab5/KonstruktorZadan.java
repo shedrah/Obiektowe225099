@@ -10,7 +10,7 @@ public class KonstruktorZadan {
         public boolean Zad1(int temperatura1, int temperatura2){
             if ((temperatura1<100) || (temperatura2<100))
             {
-                System.out.println("Zad1: ");
+                System.out.println("Zad1: "+true);
                 return true;
             }else
                 return false;
