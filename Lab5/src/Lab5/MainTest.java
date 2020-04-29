@@ -7,32 +7,31 @@ public class MainTest {
     @org.junit.jupiter.api.Test
     public void TestZad1()
     {
-        boolean wynik1=false;
+        boolean wynikOczekiwany=false;
         KonstruktorZadan testowanie = new KonstruktorZadan();
-        assertEquals(wynik1,testowanie.Zad1(120,210),"Test niezdany");
+        assertEquals(wynikOczekiwany,testowanie.Zad1(120,210),"Test niezdany");
     }
     @org.junit.jupiter.api.Test
     public void TestZad2()
     {
-        Boolean wynik2=true;
+        Boolean wynikOczekiwany=true;
         KonstruktorZadan testowanie = new KonstruktorZadan();
         int []tablica={4, 3, 6, 1, 2, 3, 9, 1, 2, 5};
-        assertEquals(wynik2,testowanie.Zad2(tablica),"Test niezdany");
+        assertEquals(wynikOczekiwany,testowanie.Zad2(tablica),"Test niezdany");
     }
     @org.junit.jupiter.api.Test
     public void TestZad3()
     {
-        String wynik3="Dzisiaj je";
+        String wynikOczekiwany="Dzisiaj je";
         KonstruktorZadan testowanie = new KonstruktorZadan();
-        int []tablica={4, 3, 6, 1, 2, 3, 9, 1, 2, 5};
-        assertEquals(wynik3,testowanie.Zad3("Dzisiaj jest czwartek"),"Test niezdany");
+        assertEquals(wynikOczekiwany,testowanie.Zad3("Dzisiaj jest czwartek"),"Test niezdany");
     }
     @org.junit.jupiter.api.Test
     public void TestZad4()
     {
         KonstruktorZadan testowanie = new KonstruktorZadan();
-        int[] i = {4, 3, 6, 1, 2, 3, 9, 1, 2, 5};
-        int [] x ={5, 2, 1, 9, 3, 2, 1, 6, 3, 4};
-        assertArrayEquals(x,testowanie.Zad4(i),"Test niezdany");
+        int[] sprawdzane = {4, 3, 6, 1, 2, 3, 9, 1, 2, 5};
+        int [] wynikOczekiwany ={5, 2, 1, 9, 3, 2, 1, 6, 3, 4};
+        assertArrayEquals(wynikOczekiwany,testowanie.Zad4(sprawdzane),"Test niezdany");
     }
 }
